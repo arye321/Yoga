@@ -2,6 +2,7 @@
 <html>
 
 <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
 	<meta charset="utf-8">
     <title>yoga 🧘‍♀️</title>
@@ -15,54 +16,44 @@
         }
         
         td, th {
-          border: 1px solid #ffffff00;
-          
+          border: 1px solid rgba(0, 0, 0, 0.5);
+          font-weight: 900;
           padding: 8px;
         }
         
         tr:nth-child(even) {
           background-color: #dad4d4bd;
         }
-        button {
-            
-            background-color: #3121c4; /* Green */
-            border: none;
-            color: white;
-            padding: 15px 32px;
-            
-            text-decoration: none;
-            display: inline-block;
-            font-size: 16px;
-}
+        
         </style>
 </head>
 <body >
     <div id="top_buttons" style="text-align: center;">
 
-     <button id="btnEemove"  style="margin-top: 25px;background-color: #b61926;">מחק שיעור אחרון</button>
-     <button id="btnAdd" style="margin-top: 25px;font-size: 20px;">הוסף שיעור</button>
+     <button id="btnAdd" class="btn btn-primary" style="margin-top: 25px;font-size: 20px;">הוסף שיעור</button>
 
 
     </div>
     
 
     <div id="mainDiv" style="margin-top: 25px;  ">
-        <table id="table" style="width:auto; ">
-            <tr>
-                <th>מספר בכרטיסיה</th>
+        <table id="table" style="width:auto; text-align: center;">
+            <tr >
+                <th>מספר</th>
                 <th>תאריך</th>
                 
             </tr>
             <tr id='tr_date'>
-                <td>Alfreds Futterkiste</td>
-                <td>Maria Anders</td>
-                
-            <tr>
-                <tr id='tr_date'>
-                    <td>Alfreds Futterkiste</td>
-                    <td>Maria Anders</td>
-                    
-                <tr>
+                <td>1</td>
+                <td>15.15.15</td>
+    
+            </tr>
+            <tr id='tr_date'>
+                <td>2</td>
+                <td>16.16.16</td>
+    
+            </tr>
+
 
 
         </table>
@@ -70,8 +61,12 @@
     </div>
     <br>
     <div id="top_buttons" style="text-align: center;">
+        <button id="btnEemove"  class="btn btn-danger" style="margin-top: 25px;background-color: #b61926;">מחק שיעור אחרון</button>
 
-        <button id="btnKillALL" style="margin-top: 25px;background-color: #b61926;"> מחק כל השיעורים</button>
+        <br>
+
+
+        <button id="btnKillALL" class="btn btn-danger" style="margin-top: 100px;background-color: #b61926;padding: 10px 20px;"> מחק כל השיעורים</button>
     </div>
 <script src="index.js"></script>
 </body>
