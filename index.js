@@ -20,7 +20,7 @@ function main(){
 
 function addDate(newDate){
     if(!newDate){
-        const tempDate =new Date().toLocaleDateString()
+        const tempDate =new Date().toLocaleDateString('en-GB')
         const tempHour = new Date().toLocaleTimeString()
         newDate = `${tempDate} ${tempHour}`
         dates.push(newDate)
