@@ -24,7 +24,7 @@ function addDate(newDate){
         const tempHour = new Date().toLocaleTimeString()
         newDate = `${tempDate} ${tempHour}`
         dates.push(newDate)
-        backupDates.push(newDate)
+        
     }
     var rowCount = table.rows.length;
 
