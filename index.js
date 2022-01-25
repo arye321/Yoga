@@ -69,7 +69,7 @@ function killDates(){
 function undoDates(){
     table.innerHTML =`<tr > <th>מספר</th> <th>תאריך</th> </tr>`
 
-    dates = backupDates
+    dates = backupDates.slice()
     localStorage.setItem("dates3", JSON.stringify(backupDates));
     
     for (const date of backupDates){
